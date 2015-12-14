@@ -40,25 +40,3 @@ app.directive('contenteditable', ['$sce', function($sce) {
     }
   };
 }]);
-
-// old jQuery code code
-// (function($){
-// 	$(function(){
-// 		$('#btnConvert').click(function(){
-// 			var input = $('#madLib').val();
-// 			input = input.replace(/{{\s*noun\s*}}/ig, "<div class='replace-container'><input type='text' /><span class='replace-type'>(noun)</span></div>");
-// 			input = input.replace(/{{\s*adjective\s*}}/ig, "<div class='replace-container'><input type='text' /><span class='replace-type'>(adjective)</span></div>");
-// 			input = input.replace(/{{\s*adverb\s*}}/ig, "<div class='replace-container'><input type='text' /><span class='replace-type'>(adverb)</span></div>");
-// 			input = input.replace(/{{\s*person\s*}}/ig, "<div class='replace-container'><input type='text' /><span class='replace-type'>(Person&apos;s Name)</span></div>");
-// 			input = input.replace(/{{\s*number\s*}}/ig, "<div class='replace-container'><input type='text' /><span class='replace-type'>(number)</span></div>");
-// 			$('#madLibOutput').html(input);
-
-// 		});
-// 		$(document).bind('keypress', function(e) {
-// 	        if(e.keyCode==13){
-// 	             $('#btnConvert').trigger('click');
-// 	         }
-// 	    });
-// 	});
-
-// })(jQuery);
