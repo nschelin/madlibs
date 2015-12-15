@@ -23,10 +23,14 @@ button {
 }
 
 .madLibContainer, .madLibOutputContainer {
-	float: left;
 	border: 1px solid black;	
-	/*width: 500px;*/
 	margin: 5px;
-	min-height: 200px;
-	/*max-height: 800px;*/
+	height: 200px;
+}
+
+
+@media (min-width: 992px) {
+	.madLibContainer, .madLibOutputContainer {
+		height: 800px;
+	}
 }

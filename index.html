@@ -11,15 +11,15 @@
 	</head>
 	<body ng-app="MadLibsApp">
 	<body>
-		<div class="container-fluid" ng-controller="MainCtrl">
+		<div class="container" ng-controller="MainCtrl">
 			<div class="row">
 				<h2 class="col-md-12">{{title}}</h2>
 			</div>
 			<div class="row">
-				<div class="madLibContainer col-xs-5">
+				<div class="madLibContainer col-md-5">
 					<div id="madLib" ng-model="madLibsContent" contenteditable></div>
 				</div>
-				<div class="madLibOutputContainer col-xs-5">
+				<div class="madLibOutputContainer col-md-5">
 					<div class="" id="madLibOutput" ng-bind="madLibsContent"></div>
 				</div>
 			</div>
